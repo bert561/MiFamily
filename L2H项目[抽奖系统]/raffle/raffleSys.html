@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="GBK">
+    <title>抽奖系统</title>
+    <link rel="stylesheet" href="css/sty.css"/>
+</head>
+<body>
+<!--用户的输入-->
+<form id="myForm" action="">
+    <label for="input-one">编号(id)：</label><input id="input-one" type="text"/>
+    <label for="input-two">姓名(name)：</label><input id="input-two" type="text"/>
+    <label for="input-three">年龄(age)：</label><input id="input-three" type="text"/>
+    <label for="input-four">性别(sex)：</label><input id="input-four" type="text"/>
+    <input id="submit" type="button" value="添加（insert）"/>
+</form>
+<!--表格-->
+<table id="tab" border="1px" cellspacing="0" cellpadding="0">
+    <caption class="caption">抽奖人员名单</caption>
+    <tr class="tab-info">
+        <th>编号(id)</th>
+        <th>姓名(name)</th>
+        <th>年龄(age)</th>
+        <th>性别(sex)</th>
+        <th class="oper">操作(operation)</th>
+    </tr>
+</table>
+<!--导航按钮-->
+<div class="btn-list">
+    <ul>
+        <a href="javascript:;"><li class="navBtn btnSelect forwordLoader">1</li></a>
+        <a href="javascript:;"><li class="navBtn">2</li></a>
+        <a href="javascript:;"><li class="navBtn">3</li></a>
+    </ul>
+</div>
+<!--抽奖按钮-->
+<a href="javascript:;" class="raff">点我开奖</a>
+<!--抽奖轮盘-->
+<div class="raffroundImg"></div>
+</body>
+<script src="js/jquery-1.10.1.js"></script>
+<script src="js/panstant.js"></script>
+</html>

@@ -1,0 +1,157 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.caption{
+    color:red;
+    font-size:2.4em;
+}
+#tab{
+    margin:0px auto;
+    width:80%;
+}
+.tab-info{
+    height:50px;
+}
+.oper{
+    width:20%;
+}
+.tr-info{
+    height:40px;
+}
+.tr-info td{
+    text-align:center;
+}
+.btn-list{
+    margin-top:20px;
+}
+.btn-list ul:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.btn-list ul{
+    margin:0px auto;
+    width:230px;
+    list-style:none;
+    display:block ;
+}
+.btn-list ul .navBtn{
+    text-align:center;
+    border:1px solid black;
+    margin-left:10px;
+    float:left;
+    width:30px;
+    height:30px;
+    line-height:30px;
+}
+/*清除浮动*/
+/*.btn-list ul .navBtn:after{
+    content:"";
+    display:block;
+    clear:both;
+}*/
+.btnSelect{
+    background:black;
+    color:white;
+}
+.btn-list ul .navBtn:hover{
+    background-color:black;
+    color:white;
+}
+.delete{
+    margin:0px auto;
+    text-decoration:none;
+    color:black;
+    font-size:20px;
+    display:block;
+    width:60%;
+}
+.delete:hover{
+    color:red !important;
+}
+#myForm{
+    margin-top:15px;
+    text-align:center;
+    padding:5px;
+}
+#input-one,#input-two,#input-three,#input-four{
+    outline:none;
+    width:10%;
+    height:20px;
+    color:red;
+    border:1px solid red;
+}
+@media screen and (max-width:725px){
+    #input-one,#input-two,#input-three,#input-four{
+        width:100%;
+    }
+    body .raff{
+        width:50px;
+        height:50px;
+        font-size:1px;
+        line-height:50px;
+        left:0;
+        bottom:300px;
+    }
+}
+#submit{
+    cursor:pointer;
+    margin-top:5px;
+    display:inline-block;
+    background:red;
+    width:100%;
+    height:40px;
+    color:white;
+    font-size:20px;
+    font-weight:lighter;
+    font-family: 'Microsoft YaHei';
+}
+/*抽奖按钮*/
+.raff{
+    line-height:80px;
+    text-align:center;
+    text-decoration:none;
+    color:white;
+    font-size:19px;
+    display:block;
+    position:absolute;
+    border-radius:50%;
+    width:80px;
+    height:80px;
+    background:red;
+    right:15px;
+    bottom:20px;
+}
+/*清除浮动*/
+.raff:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.raffroundImg{
+    position:absolute;
+    width:200px;
+    height:200px;
+    left:50%;
+    top:50%;
+    margin-top:-100px;
+    margin-left:-100px;
+    background-image:url("../img/raffle.jpg");
+    background-size:200px 200px;
+    border-radius:50%;
+    display:none;
+}
+
+@keyframes tran{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(6000deg);
+    }
+}
+
+.imgTran{
+    animation: tran 5s ;
+}
